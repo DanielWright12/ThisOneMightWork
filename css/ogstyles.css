@@ -1,0 +1,169 @@
+body {
+    background-color: black;
+    color: white
+}
+
+
+
+h2 {
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.navbar {
+    background-color: rgb(31, 29, 29);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    padding: 10px 15px;
+    font-size: medium;
+    font-style: bold;
+    color: white;
+    text-decoration: none
+}
+
+.navbar a:hover {
+    background-color: red;
+    color: yellow;
+    border-radius: 10px;
+    text-decoration: underline
+}
+
+.boxmodel {
+    padding: 15px;
+    background-color: rgb(246, 4, 4);
+    border: 5px solid yellow margin: 20px;
+}
+
+.sidebar {
+    background-color: rgb(31, 29, 29);
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    /* Ensure it aligns with navbar if there’s one */
+    left: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    /* Make sidebar content flex */
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: flex-start;
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Reset default margins */
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    /* Adjust spacing between items */
+}
+
+.sidebar ul li a {
+    padding: 10px 15px;
+    /* Match the navbar padding */
+    font-size: medium;
+    /* Consistent font size */
+    font-style: italic;
+    /* If desired */
+    text-decoration: none;
+    /* Remove default underline */
+    color: white;
+    /* Ensure visible text color */
+    display: block;
+    /* Ensure clickable area fills width */
+    border-radius: 5px;
+    /* Match navbar’s hover effect */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+.sidebar ul li a:hover {
+    background-color: red;
+    /* Match navbar hover */
+    color: yellow;
+    /* Optional: Change text color on hover */
+    text-decoration: underline;
+    border-radius: 15px
+}
+
+
+.maincontent {
+    margin-left: 220px;
+    padding: 20px
+}
+
+
+.contentcenter {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically (if needed) */
+    min-height: 100vh;
+    /* Full height of the viewport */
+    margin: 0;
+    background-color: white;
+    /* Optional: Background for contrast */
+}
+
+.maincontent {
+    width: 80%;
+    /* Adjust width as needed */
+    max-width: 800px;
+    /* Prevents content from being too wide */
+    padding: 20px;
+    /* Adds internal spacing */
+    background-color: black;
+    /* Optional: Makes content stand out */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+    box-sizing: border-box;
+    /* Includes padding in width calculation */
+    text-align: center;
+    /* Centers inline elements like text and images */
+}
+
+.homepage a {
+    font-style: none;
+    text-decoration: none;
+color:red
+}
+
+.seeotherpage a {
+    font-style: none;
+    text-decoration: none;
+color:red
+}
+
+.centered-list {
+    display: flex;           /* Use Flexbox for centering */
+    justify-content: center; /* Horizontally center the list */
+    align-items: center;     /* Vertically center the list */
+    text-align: center;      /* Ensure text alignment is centered */
+    flex-direction: column;  /* Stack list items vertically */
+    height: 100%;            /* Optional: Set a height if needed */
+}
+
+.centered-list ul {
+    list-style-type: none;   /* Remove bullet points (optional) */
+    padding: 0;              /* Remove default padding */
+    margin: 0;               /* Remove default margin */
+}
+
+.centered-list li {
+    margin: 5px 0;           /* Add spacing between list items */
+}

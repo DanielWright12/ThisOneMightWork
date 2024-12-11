@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<img src="../Images/pngtree-cute-lively-green-little-dinosaur-image_1318806.jpg" alt="dinosaurimage" width="300">
+
+<body> 
+<h1> This is my other Page </h1>
+
+<a href = "../chiefsHTML/chiefs.html"> Back to Chiefs Fan Page </a> <br> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f30a0a;
+        padding: 20px;
+      }
+      #game {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        max-width: 400px;
+        margin: auto;
+      }
+      input[type="number"] {
+        width: 60px;
+        padding: 5px;
+        margin: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  
+  
+    <h1>Guess the Number!</h1>
+    <div id="game">
+      <p>I'm thinking of a number between 1 and 100...</p>
+      <input type="number" id="guess" placeholder="Enter a number">
+      <button onclick="checkGuess()">Submit Guess</button>
+      <p id="message"></p>
+    </div>
+  
+    <script>
+      // Generate a random number between 1 and 100
+      const randomNumber = Math.floor(Math.random() * 100) + 1;
+      let attempts = 0;
+  
+      function checkGuess() {
+        const userGuess = parseInt(document.getElementById('guess').value);
+        const message = document.getElementById('message');
+        attempts++;
+  
+        if (userGuess === randomNumber) {
+          message.innerHTML = `🎉 Correct! You guessed it in ${attempts} attempts. RED KINGDOM BABY!!`;
+        } else if (userGuess < randomNumber) {
+          message.innerHTML = "⬆️ Too low! Try again.";
+        } else if (userGuess > randomNumber) {
+          message.innerHTML = "⬇️ Too high! Try again.";
+        } else {
+          message.innerHTML = "❓ Please enter a valid number.";
+        }
+      }
+    </script>
+  
+
+
+
+<h1>GO CHEIFS</h1>
+
+</body>

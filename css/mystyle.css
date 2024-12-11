@@ -1,0 +1,55 @@
+h1 {
+    color: red;
+}
+
+#about {
+    background-image: url('../Class/Images/CoachReid.jpg');
+    /* Correct path to your image */
+    background-size: cover;
+    /* Ensure the image covers the entire section */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    color: white;
+    /* Text color to contrast with the background */
+    padding: 100px 0;
+    /* Add padding to the top and bottom of the section */
+    position: relative;
+    /* Ensure content is stacked above the background */
+}
+
+#about .container {
+    position: relative;
+    /* Make sure content sits on top of the image */
+    z-index: 1;
+    /* Bring content above the background */
+}
+
+#about h2,
+#about p {
+    z-index: 2;
+    /* Ensure text is above background */
+}
+
+.text-white,
+.text-white-50 {
+    color: white !important;
+    /* Ensure the text remains white */
+}
+
+.coachried {
+    max-width: 100%;
+    /* Ensures the image does not exceed its container width */
+    height: 100%;
+    /* Ensures the height is adjusted based on container */
+    object-fit: contain;
+    /* Makes sure the whole image is visible, without being cropped */
+}
+
+.myphoto {
+    height: auto;
+    width: auto;
+
+}
+
